@@ -144,12 +144,10 @@ const sr = ScrollReveal({
     // reset: true
 });
 
-sr.reveal('.ups, .team-name, .occard, .mySwiper, .headline, .eventdescription, .midline, .evntcard, .eventdetcard, .mid, .nav, .ypsl, .imgcard, .contcard');
+sr.reveal('.ups, .team-name, .occard, .mySwiper, .headline, .eventdescription, .midline, .evntcard, .eventdetcard, .mid, .ypsl, .imgcard, .contcard, .left, .letstalk, .intro, .right, .ieeesl, .useful');
 sr.reveal(`.headline`, {interval: 300});
 sr.reveal(`.tagline`, {interval: 600, delay: 600});
 sr.reveal(`.apply-btn`, {interval: 900, delay: 800});
-sr.reveal(`.left, .letstalk, .intro`, {origin: 'left'});
-sr.reveal(`.right, .ieeesl, .useful`, {origin: 'right'});
 
 // $(document).ready(function(){
   
