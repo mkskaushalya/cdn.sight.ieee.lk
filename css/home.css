@@ -278,7 +278,7 @@
     border-bottom: 3px solid var(--white);
 }
 
-#objectives, #weare, #news, #eventshome, #oc, #gallery, #homecontact, #counter-sec, #projects{/*============================================*/
+#objectives, #weare, #news, #eventshome, #oc, #gallery, #homecontact, #counter-sec, #projects, #recent-updates{/*============================================*/
     padding: var(--main-padding);
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -387,6 +387,9 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 5px;
+}
+#weare .welcome-msg h2::after, #weare .welcome-msg h2::before{
+    display: none;
 }
 #weare .welcome-msg hr{
     width: calc(100% - 40px);
@@ -1027,6 +1030,50 @@
 }
 
 
+
+
+#recent-updates{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    row-gap: 4rem;
+}
+#recent-updates .cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    
+}
+
+#recent-updates .cont .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 55%;
+
+}
+#recent-updates .cont .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+
+}
+#recent-updates .cont .left h3{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+}
+#recent-updates .cont .left hr{
+    border: 2px solid var(--second-color);
+    width: 80px;
+
+}
+#recent-updates .cont .left p{
+    color: var(--gray4);
+}
 #homecontact{
     background-color: var(--white);
     flex-direction: column;
@@ -1285,6 +1332,41 @@
 
     #weare .about-slsight .left div img{
         max-width: 250px;
+    }
+
+    #recent-updates{
+        row-gap: 3rem;
+    }
+    #recent-updates .cont{
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        
+    }
+    
+    #recent-updates .cont .left{
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    #recent-updates .cont .right{
+        width: 100%;
+    
+    }
+    #recent-updates .cont .left h3{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+    
+    }
+    #recent-updates .cont .left p{
+        text-align: center;
+    
+    }
+    #recent-updates .cont .left hr{
+        max-width: 200px;
+        width: 100%;
+    
     }
 }
 
